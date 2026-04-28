@@ -1,6 +1,4 @@
-def generate_readme():
-
-    header = """<div align="center">
+<div align="center">
 
 # Hey, I'm Zaid Burhan 👋
 ### Data Science Undergraduate · ML Engineer · Data Warehouse Builder
@@ -13,12 +11,11 @@ def generate_readme():
 
 ---
 
-> 🎯 *Turning raw data into production-ready insights — through clean pipelines, smart models, and dashboards that actually make sense.*
+> 🤖 *Building intelligent systems that learn, predict, and adapt — from ML models and AI-powered apps to data pipelines that fuel them.*
 
 ---
-"""
 
-    about = """## 🧠 About Me
+## 🧠 About Me
 
 - 🎓 Studying **BS Data Science** at **FAST-NUCES, Lahore** *(2023 – Present)*
 - 🔭 Currently building **ETL pipelines**, **ML-powered web apps**, and **BI dashboards**
@@ -27,9 +24,8 @@ def generate_readme():
 - 🌱 Always exploring new tools, cloud tech, and real-world AI applications
 
 ---
-"""
 
-    tech_stack = """## 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 #### 💻 Languages & Core Libraries
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
@@ -41,12 +37,20 @@ def generate_readme():
 #### 🤖 Machine Learning & AI
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-`Random Forest` `Gradient Boosting` `KNN` `SVM` `K-Means` `Neural Networks`
+![Random Forest](https://img.shields.io/badge/Random%20Forest-228B22?style=flat&logoColor=white)
+![Gradient Boosting](https://img.shields.io/badge/Gradient%20Boosting-4B8B3B?style=flat&logoColor=white)
+![KNN](https://img.shields.io/badge/KNN-6A5ACD?style=flat&logoColor=white)
+![SVM](https://img.shields.io/badge/SVM-8A2BE2?style=flat&logoColor=white)
+![K-Means](https://img.shields.io/badge/K--Means-9370DB?style=flat&logoColor=white)
+![Neural Networks](https://img.shields.io/badge/Neural%20Networks-FF6347?style=flat&logoColor=white)
 
 #### 🗄️ Databases & Data Engineering
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-`ETL/ELT Pipelines` `Data Warehousing` `OLAP` `Fact/Dimension Schemas`
+![ETL/ELT](https://img.shields.io/badge/ETL%2FELT%20Pipelines-2F4F4F?style=flat&logoColor=white)
+![Data Warehousing](https://img.shields.io/badge/Data%20Warehousing-4682B4?style=flat&logoColor=white)
+![OLAP](https://img.shields.io/badge/OLAP-1C6EA4?style=flat&logoColor=white)
+![Fact/Dimension](https://img.shields.io/badge/Fact%2FDimension%20Schemas-5B7FA6?style=flat&logoColor=white)
 
 #### 📊 BI & Visualization
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
@@ -66,9 +70,8 @@ def generate_readme():
 ![Gemini](https://img.shields.io/badge/Gemini%20API-4285F4?style=flat&logo=google&logoColor=white)
 
 ---
-"""
 
-    projects = """## 🚀 Featured Projects
+## 🚀 Featured Projects
 
 <table>
 <tr>
@@ -93,7 +96,7 @@ End-to-end **ETL/ELT pipeline** + PostgreSQL data warehouse for player performan
 <td width="50%">
 
 ### 🎓 Student Placement Predictor
-Flask app that predicts **placement outcomes & salary packages** using CGPA, internships, coding skills, and communication scores via Random Forest.
+Flask app predicting **placement outcomes & salary packages** using CGPA, internships, coding skills, and communication scores via Random Forest.
 
 `Flask` `Random Forest` `Scikit-learn` `REST API`
 
@@ -119,16 +122,15 @@ Full-stack **Fiverr-inspired** platform with service listings, role-based auth, 
 <td width="50%">
 
 ### 🔜 More coming soon...
-Always working on something new. Stay tuned!
+Always building something new. Stay tuned!
 
 </td>
 </tr>
 </table>
 
 ---
-"""
 
-    certifications = """## 📜 Certifications
+## 📜 Certifications
 
 | Certificate | Platform |
 |---|---|
@@ -138,21 +140,8 @@ Always working on something new. Stay tuned!
 | 🔥 Intro to Deep Learning with PyTorch | DataCamp |
 
 ---
-"""
 
-    github_stats = """## 📈 GitHub Stats
-
-<div align="center">
-
-![Zaid's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Zeyd10&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Zeyd10&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
-
----
-"""
-
-    footer = """## 📫 Let's Connect
+## 📫 Let's Connect
 
 <div align="center">
 
@@ -162,16 +151,3 @@ Always working on something new. Stay tuned!
 *⚡ Fun fact: I analyze football for fun — and then build ML models to do it even better.*
 
 </div>
-"""
-
-    full_readme = header + about + tech_stack + projects + certifications + github_stats + footer
-
-    with open("README.md", "w", encoding="utf-8") as f:
-        f.write(full_readme)
-
-    print("✅ README.md generated successfully!")
-    print("📁 Find it in the current directory and paste it into your GitHub profile repo.")
-
-
-if __name__ == "__main__":
-    generate_readme()
